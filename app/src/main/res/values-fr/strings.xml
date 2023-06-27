@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">paraClick</string>
+    <string name="email">Entrer votre email</string>
+    <string name="pwd">Entrer votre mot de passe</string>
+    <string name="click_to_login">Cliquer vers Login</string>
+    <string name="info">A propos de nous</string>
+    <string name="others">Autres</string>
+    <string name="name">Entrer votre prénom</string>
+    <string name="search">Rechercher</string>
+    <string name="menu_logout">Quitter</string>
+    <string name="text">cela un text pour tester mode night</string>
+    <string name="search_product">Rechercher un produit</string>
+    <string name="logout">exit</string>
+    <string name="element_text">text</string>
+    <string name="fpwd">Mot de passe oublié ?</string>
+
+    <string name="slogan">Les meilleurs services disponibles pour les meilleurs clients</string>
+    <string name="login_admin">Connexion Admin</string>
+    <string name="enter_name">Entrer nom</string>
+    <string name="enter_password">Entrer mot de passe</string>
+    <string name="enter_email">Entrer email</string>
+    <string name="enter_confirm_password">Entrer confirmer mot de passe</string>
+    <string name="title_activity_page_accueil">Page accueil</string>
+    <string name="navigation_drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">En-tête de navigation</string>
+    <string name="action_settings">Paramètres</string>
+
+    <string name="menu_home">Acceuil</string>
+    <string name="menu_gallery">Galerie</string>
+    <string name="menu_slideshow">Diaporama</string>
+    <string name="home">Acceuil</string>
+    <string name="orders">Ordres</string>
+    <string name="map">Carte</string>
+    <string name="_1_100dt">1 100dt</string>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App"
+        tools:targetApi="31">
+        <activity
+            android:name=".Upload"
+            android:exported="false" />
+        <activity
+            android:name=".Products.Facture"
+            android:exported="false" />
+        <activity
+            android:name=".Products.ListOrders"
+            android:exported="false" />
+        <activity
+            android:name=".Page_accueil"
+            android:exported="false"
+            android:label="@string/title_activity_page_accueil"
+            android:theme="@style/Theme.App.NoActionBar" />
+        <activity
+            android:name=".DarkLight"
+            android:exported="false" />
+        <activity
+            android:name=".Battery"
+            android:exported="false" />
+        <activity
+            android:name=".ListUsers"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDqLI-zywo9JYT1d_CYO6f8DCq6fuPSu9Y" />
+
+        <activity
+            android:name=".MapLocation"
+            android:exported="false"
+            android:parentActivityName=".Products.Recycler_View">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Products.Recycler_View" />
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:exported="false"
+            android:parentActivityName=".Products.Recycler_View">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Products.Recycler_View" />
+        </activity>
+        <activity
+            android:name=".Products.ProductDetails"
+            android:exported="false"
+            android:parentActivityName=".Products.Recycler_View">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Products.Recycler_View" />
+        </activity>
+
+        <activity
+            android:name=".MainTest"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Settings"
+            android:exported="false"
+            android:parentActivityName=".Products.Recycler_View">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Products.Recycler_View" />
+        </activity>
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Products.Recycler_View"
+            android:exported="false"
+            android:label="List Products"
+            android:theme="@style/Theme.App.NoActionBar" />
+        <activity
+            android:name=".Products.AddProduct"
+            android:exported="false" />
+        <activity
+            android:name=".Auth.LoginAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".Auth.RegisterAdmin"
+            android:exported="false"
+            android:theme="@style/Theme.App.NoActionBar"/>
+        <activity
+            android:name=".Auth.Login"
+            android:exported="false"
+            android:theme="@style/Theme.App.NoActionBar"/>
+        <activity
+            android:name=".Auth.Register"
+            android:exported="false"
+            android:parentActivityName=".Auth.Login" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

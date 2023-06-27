@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    tools:context=".Settings"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Level"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="100%"
+        android:id="@+id/batteryLevel"
+        android:layout_below="@+id/textView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/imen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Dark/Light"
+                style="@style/TEXT"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+            <Switch
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/switcher"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/terrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            style="@style/TEXT"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:layout_margin="8dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bouton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Button"
+            style="@style/BUTTON"
+            android:layout_margin="8dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
